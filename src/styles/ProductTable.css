@@ -1,0 +1,59 @@
+.product-list table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--header-bg);
+  }
+  
+  .product-list th,
+  .product-list td {
+    padding: var(--gap);
+    border-bottom: 1px solid var(--border-color);
+    text-align: left;
+  }
+  
+  .product-list th {
+    position: relative;
+  }
+  
+  .product-list th span {
+    background-color: #000;
+    padding: 10px;
+    border-radius: 4px;
+    color: var(--primary-color);
+  }
+  
+  .product-list th:last-child,
+  .product-list td:last-child {
+    text-align: center;
+  }
+  
+  .action-buttons button:disabled {
+    font-size: 1em;
+    cursor: not-allowed;
+    color: var(--disabled-color);
+  }
+  
+  .action-buttons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .edit-icon {
+    font-size: 1em;
+    cursor: pointer;
+    color: var(--edit-icon-color);
+  }
+  
+  .delete-icon {
+    font-size: 1em;
+    cursor: pointer;
+    color: var(--delete-icon-color);
+  }
+  
+  .disable-icon {
+    font-size: 1.2em;
+    cursor: pointer;
+    color: var(--disable-icon-color);
+  }
+  

@@ -1,0 +1,32 @@
+:root {
+  --bg-color: #181818;
+  --overlay-bg: rgba(0, 0, 0, 0.7);
+  --popup-bg: #1e1e1e;
+  --header-bg: #252424;
+  --border-color: #333;
+  --text-color: #ffffff;
+  --light-text-color: #aaa;
+  --primary-color: #a8d527;
+  --disabled-color: rgb(108, 101, 101);
+  --edit-icon-color: green;
+  --delete-icon-color: red;
+  --disable-icon-color: purple;
+  --button-bg: #494744;
+  --hover-bg: #373634;
+  --stat-bg: #214a22;
+  --input-bg: #2e2e2e;
+  --input-focus-border: #555;
+  --slider-bg: #ccc;
+  --slider-checked-bg: #6a822d;
+  --slider-circle-bg: white;
+  --slider-checked-circle-bg: #a8d527;
+  --gap: 20px; /* Default gap */
+}
+
+.app {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  font-family: "Arial", sans-serif;
+  padding: var(--gap);
+}

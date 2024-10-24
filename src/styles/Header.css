@@ -1,0 +1,62 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Switch Toggle Styles */
+.role-switch {
+  display: flex;
+  gap: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 22px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--slider-bg);
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  background-color: var(--slider-circle-bg);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: var(--slider-checked-bg);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+  background-color: var(--slider-checked-circle-bg);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
