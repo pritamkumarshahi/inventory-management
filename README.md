@@ -1,4 +1,4 @@
-# Inventory Management Application
+<img width="1440" alt="Screenshot 2024-10-24 at 7 00 51 AM" src="https://github.com/user-attachments/assets/3c27de4c-5415-458f-93fc-48bc1ff198be"># Inventory Management Application
 
 A React-based Inventory Management Application that allows users to manage products, view statistics, and perform administrative tasks. This application is built using Redux for state management and provides a clean interface for product handling.
 
@@ -68,5 +68,4 @@ Your app is ready to be deployed!
 
 If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-
-git remote add origin https://github.com/pritamkumarshahi/inventory-management.git
+![Uploading Screenshot 2024-10-24 at 7.00.51 AM.png…]()
