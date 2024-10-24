@@ -14,7 +14,7 @@ const PageLayout = ({ isLoading, error, children }) => {
   if (error) {
     return (
       <div className="error-container">
-        <h2>Error: {error}</h2>
+        <h2>Error: Somthing went wrong</h2>
         <p>Please try again later.</p>
       </div>
     );

@@ -7,19 +7,20 @@ import PropTypes from "prop-types";
 import "../styles/Stats.css";
 
 const Stats = ({ products = [] }) => {
-  const filterDisabled = products?.filter(item => !item.disabled);
+  console.log(products, "products")
+  const filteredProduct = products.filter(item => !item.disabled);
 
-  const totalProducts = filterDisabled.length;
-  const totalStoreValue = filterDisabled.reduce((sum, product) => {
-    const numericValue = parseFloat(filterDisabled?.value?.replace("$", "").trim());
+  const totalProducts = filteredProduct.length;
+  const totalStoreValue = filteredProduct?.reduce((sum, product) => {
+    const numericValue = parseFloat(product?.value?.replace("$", "").trim());
     return sum + (isNaN(numericValue) ? 0 : numericValue);
   }, 0);
 
-  const outOfStock = filterDisabled.filter(
+  const outOfStock = filteredProduct.filter(
     (product) => product.quantity === 0
   ).length;
 
-  const categories = [...new Set(filterDisabled.map((product) => product.category))]
+  const categories = [...new Set(filteredProduct.map((product) => product.category))]
     .length;
 
   return (
@@ -59,14 +60,14 @@ const Stats = ({ products = [] }) => {
   );
 };
 
-// Stats.propTypes = {
-//   products: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       value: PropTypes.string.isRequired,
-//       quantity: PropTypes.number.isRequired,
-//       category: PropTypes.string.isRequired,
-//     })
-//   ).isRequired,
-// };
+Stats.propTypes = {
+  products: PropTypes.arrayOf(
+    PropTypes.shape({
+      value: PropTypes.string.isRequired,
+      quantity: PropTypes.number.isRequired,
+      category: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
 
 export default Stats;

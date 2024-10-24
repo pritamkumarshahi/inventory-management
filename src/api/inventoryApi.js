@@ -10,8 +10,5 @@ export const fetchInventoryData = async () => {
         return response.data;
     } catch (error) {
         console.error("Failed to fetch inventory data. Returning mock data instead.", error);
-        
-        // API' is failing too much, had to put MOCK data when it fails, Not a good practice it's just to get the data
-        return mockInventoryData;
     }
 };
